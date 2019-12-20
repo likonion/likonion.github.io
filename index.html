@@ -28,8 +28,9 @@ description: 本站记录我人生之旅的沿途风景！
             <article class="article-item">
                 {% if post.cover %}
                 <div class="post-cover">
-                    <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}"></a>
-                    <img src="{{ post.cover | relative_url }}" href="{{ post.url | relative_url }}" alt="">
+                    <a href="{{ post.url | relative_url }}" title="{{ post.title }}">
+                        <img src="{{ post.cover | relative_url }}" href="{{ post.url | relative_url }}" alt="">
+                    </a>
                 </div>
                 {% endif %}
                 <section class="post-preview">
