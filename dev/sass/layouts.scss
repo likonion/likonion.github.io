@@ -19,8 +19,11 @@
         float: none;
         margin: 0 auto;
     }
-    .g-sidebar, .search-card {
+    .g-sidebar {
         display: none;
+    }
+    .search-card {
+        margin: 10px 0;
     }
     .pagination  {
         .page-num {
@@ -170,6 +173,9 @@
     }
     .home-content {
         margin-bottom: 32px;
+    }
+    .search-card {
+        
     }
     .article-list {
         .article-item {

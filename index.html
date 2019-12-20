@@ -1,7 +1,7 @@
 ---
 layout: default
 home-title: 文森特的博客
-description: 前端开发者，热爱技术&设计，简单乐观爱创造
+description: 本站记录我人生之旅的沿途风景！
 ---
 
 {% include header.html %}
@@ -17,6 +17,13 @@ description: 前端开发者，热爱技术&设计，简单乐观爱创造
 
 <main class="g-container home-content">
     <div class="article-list">
+        {% if site.search %}
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
+        </div>
+        {% endif %}
         {% for post in paginator.posts %}
             <article class="article-item">
                 {% if post.cover %}
@@ -89,13 +96,7 @@ description: 前端开发者，热爱技术&设计，简单乐观爱创造
             {% endif %}
         </div>
 
-        {% if site.search %}
-        <div class="search-card">
-            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
-            <i class="iconfont icon-search"></i>
-            <div class="search_result"></div>
-        </div>
-        {% endif %}
+        
 
     </aside>
 
