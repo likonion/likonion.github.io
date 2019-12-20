@@ -37,8 +37,8 @@ nightMode: true
 
 # Comments 评论功能
 comments:
-  disqus: false
-  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+  disqus: true
+  disqus_url: 'https://likonion.disqus.com/embed.js'
 
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
@@ -56,6 +56,7 @@ postPatterns: 'circuitBoard'
 # SNS settings 配置社交网站
 # url: email, weibo, zhihu, twitter, instagram, juejin, github, douban, facebook, dribble, uicn, jianshu, medium, linkedin
 sns:
+  email: 'likonion@outlook.com'
   weibo: '//weibo.com/likozhang'
   # juejin: '//juejin.im/user/57a6f434165abd006159b4cc'
   # instagram: '//www.instagram.com/steveliaocn'

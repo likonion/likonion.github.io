@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /**
  * Jekyll Theme Style
  * - author: liaokeyu (liaokeyu.com)
@@ -626,7 +627,7 @@ a {
   padding: 0 0 32px; }
   .markdown-body .highlight {
     margin: 0 0 16px;
-    overflow: scroll; }
+    /** overflow: scroll;  修复代码高亮 显示两个 scroll的问题 **/ }
   .markdown-body img {
     transition: .3s; }
   .markdown-body ul li p, .markdown-body ol li p {
@@ -787,7 +788,7 @@ a {
 .night-mode {
   background-color: #282C33; }
   .night-mode .g-banner {
-    background-color: #282C33;
+    background: #282C33;
     color: #C8CDD3; }
   .night-mode .post-header .filter {
     opacity: .6; }
@@ -834,6 +835,9 @@ a {
       background-color: #575B63; }
   .night-mode .markdown-body {
     color: #868A94; }
+    .night-mode .markdown-body table td {
+      background-color: #282c33;
+      border-color: #454648; }
     .night-mode .markdown-body img {
       -webkit-filter: brightness(0.6); }
     .night-mode .markdown-body blockquote {

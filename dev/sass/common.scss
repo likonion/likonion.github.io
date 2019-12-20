@@ -735,7 +735,7 @@
     background-color: $color-dark-primary;
 
     .g-banner {
-        background-color: $color-dark-primary;
+        background: $color-dark-primary;
         color: #C8CDD3;
     }
 
@@ -832,6 +832,12 @@
 
     .markdown-body {
         color: $color-f-dark;
+        table {
+            td {
+                background-color: #282c33; 
+                border-color: #454648;
+            }
+        }
         img {
             -webkit-filter: brightness(.6);
         }
