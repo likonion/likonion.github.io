@@ -10,8 +10,8 @@ $(document).ready(function() {
 
         imgObject.src = imgUrl;
         imgObject.onload = function() {
-            ele.src = imgUrl;
         }
+        ele.src = imgUrl;
     })()
 
     var nav = $('.g-nav');
