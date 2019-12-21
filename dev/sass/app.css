@@ -483,6 +483,30 @@ a {
     display: inline-block;
     float: left; }
 
+.demo-wrapper {
+  width: 695px;
+  margin: -100px auto 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .demo-wrapper .demo-item {
+    width: 212px;
+    border: 1px solid #e7eaf1;
+    background: white;
+    padding: 5px;
+    box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.1);
+    margin: 2px; }
+    .demo-wrapper .demo-item .demo-img img {
+      width: 200px; }
+    .demo-wrapper .demo-item dt {
+      padding: 5px;
+      font-weight: bold; }
+    .demo-wrapper .demo-item dd {
+      margin: 0;
+      padding: 2px 5px;
+      font-size: 12px; }
+    .demo-wrapper .demo-item .code-link a {
+      color: #299cfc; }
+
 .g-footer {
   min-height: 40px;
   padding: 20px 0;
