@@ -51,6 +51,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1200px) {
     .home-banner {
         .header-img {
@@ -59,6 +60,7 @@
         }
     }
 }
+
 @media screen and (max-width: 768px) {
     .home-banner {
         .header-img {
@@ -221,6 +223,21 @@
 }
 
 @media screen and (max-width: 500px) {
+    .subpage-content {
+        .demo-wrapper {
+            .demo-item {
+                width: 100%;
+
+                .demo-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+
     .home-banner {
         height: 400px;
 
@@ -387,5 +404,7 @@
             font-size: 16px;
         }
     }
+
+
 
 }
