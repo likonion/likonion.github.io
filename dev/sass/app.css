@@ -333,7 +333,7 @@ a {
 
 .article-item .post-meta .post-tag,
 .tags-card .tag,
-.tags-content .tag {
+.subpage-content .tag {
   display: inline-block;
   width: auto;
   height: 22px;
@@ -351,11 +351,11 @@ a {
   transition: .2s; }
   .article-item .post-meta .post-tag:last-child,
   .tags-card .tag:last-child,
-  .tags-content .tag:last-child {
+  .subpage-content .tag:last-child {
     margin-right: 0; }
   .article-item .post-meta .post-tag:hover,
   .tags-card .tag:hover,
-  .tags-content .tag:hover {
+  .subpage-content .tag:hover {
     color: #83888F; }
 
 .g-sidebar-wrapper {
@@ -482,30 +482,6 @@ a {
   .pagination #page-link-container {
     display: inline-block;
     float: left; }
-
-.demo-wrapper {
-  width: 695px;
-  margin: -100px auto 0;
-  display: flex;
-  flex-wrap: wrap; }
-  .demo-wrapper .demo-item {
-    width: 212px;
-    border: 1px solid #e7eaf1;
-    background: white;
-    padding: 5px;
-    box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.1);
-    margin: 2px; }
-    .demo-wrapper .demo-item .demo-img img {
-      width: 200px; }
-    .demo-wrapper .demo-item dt {
-      padding: 5px;
-      font-weight: bold; }
-    .demo-wrapper .demo-item dd {
-      margin: 0;
-      padding: 2px 5px;
-      font-size: 12px; }
-    .demo-wrapper .demo-item .code-link a {
-      color: #299cfc; }
 
 .g-footer {
   min-height: 40px;
@@ -769,9 +745,30 @@ a {
     font-size: 36px;
     line-height: 300px; }
 
-.tags-content {
+.subpage-content {
   width: 695px;
   margin: -100px auto 0; }
+  .subpage-content .demo-wrapper {
+    display: flex;
+    flex-wrap: wrap; }
+    .subpage-content .demo-wrapper .demo-item {
+      width: 212px;
+      border: 1px solid #e7eaf1;
+      background: white;
+      padding: 5px;
+      box-shadow: 5px 10px 15px 2px rgba(0, 0, 0, 0.1);
+      margin: 2px; }
+      .subpage-content .demo-wrapper .demo-item .demo-img img {
+        width: 200px; }
+      .subpage-content .demo-wrapper .demo-item dt {
+        padding: 5px;
+        font-weight: bold; }
+      .subpage-content .demo-wrapper .demo-item dd {
+        margin: 0;
+        padding: 2px 5px;
+        font-size: 12px; }
+      .subpage-content .demo-wrapper .demo-item .code-link a {
+        color: #299cfc; }
 
 .tags-list {
   padding: 40px 0; }
@@ -1074,9 +1071,9 @@ a {
   .home-content {
     margin-top: 0; }
   .article-list,
-  .tags-content {
+  .subpage-content {
     width: 100%; }
-  .tags-content {
+  .subpage-content {
     margin-top: 0; }
   .tags-banner {
     height: 300px; }
