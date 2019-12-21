@@ -117,6 +117,7 @@ a {
     color: #FC6794 !important; }
 
 .headerUp {
+  background-color: rgba(255, 255, 255, 0.98);
   top: -65px; }
 
 .headerDown {
@@ -805,6 +806,10 @@ a {
     .night-mode .g-banner {
       background: #282C33;
       color: #C8CDD3; }
+    .night-mode .g-logo {
+      background: url(/assets/icons/logo.svg) no-repeat center !important; }
+    .night-mode .headerUp {
+      background-color: #1e2127; }
     .night-mode .post-header .filter {
       opacity: .6; }
     .night-mode #idc-container-parent #idc-container textarea.idc-text_noresize,
