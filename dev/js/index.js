@@ -1,4 +1,19 @@
-$(document).ready(function(){
+$(document).ready(function() {
+    /**
+     * 首页 banner 背景图片加载过渡
+     */
+
+    (function() {
+        var ele = document.querySelector('.header-img');
+        var imgUrl = 'https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/hero.jpg';
+        var imgObject = new Image();
+
+        imgObject.src = imgUrl;
+        imgObject.onload = function() {
+            ele.src = imgUrl;
+        }
+    })()
+
     var nav = $('.g-nav');
 
     /**
@@ -20,7 +35,7 @@ $(document).ready(function(){
     /*
     *  Header Bar
     */
-    if($(window).width() > 695) {
+    if ($(window).width() > 695) {
         var header = $('.g-header');
         var headerHeight = header.outerHeight();
         var logo = $('.g-logo');
@@ -33,11 +48,11 @@ $(document).ready(function(){
             var navClassName = 'nav-' + themeStyle;
 
             if (scrollTop > headerHeight) {
-                if(scrollTop > 3 * headerHeight) {
+                if (scrollTop > 3 * headerHeight) {
                     header.addClass('headerUp');
                 }
                 header.css({
-                   
+
                     'box-shadow': '0 1px 12px rgba(0, 0, 0, .08)'
                 });
                 logo.css({
@@ -72,7 +87,7 @@ $(document).ready(function(){
     /*
     * Post Cover Resize
     */
-    function postCover(img, container) {
+    function postCover (img, container) {
         var imgWidth = img.width();
         var containerWidth = container.width();
         var imgHeight = img.height();
@@ -84,7 +99,7 @@ $(document).ready(function(){
                 'height': '100%'
             });
             imgWidth = img.width(),
-            containerWidth = container.width();
+                containerWidth = container.width();
             var marginLeft = (imgWidth - containerWidth) / 2;
             img.css('margin-left', '-' + marginLeft + 'px');
         } else {
@@ -105,14 +120,14 @@ $(document).ready(function(){
         $(this).fadeIn();
     });
 
-    $('.read-next-item img').each(function(){
+    $('.read-next-item img').each(function() {
         postCover($(this), $('.read-next-item'));
     });
 
     /**
      * Pagination
      */
-    function pagination() {
+    function pagination () {
         var total = parseInt($('#total_pages').val());
         var current = parseInt($('#current_pages').val());
         var baseUrl = $('#base_url').val();
@@ -143,7 +158,7 @@ $(document).ready(function(){
     /**
      * Search
      */
-    function Search() {
+    function Search () {
         var self = this;
         var input = $('#search_input');
         var result = $('.search_result');
@@ -156,7 +171,7 @@ $(document).ready(function(){
         input.keyup(debounce(this.autoComplete));
 
         $(document).click(function(e) {
-            if(e.target.id === 'search_input' || e.target.className === 'search_result' || e.target.className === 'search_item') {
+            if (e.target.id === 'search_input' || e.target.className === 'search_result' || e.target.className === 'search_item') {
                 return;
             }
             $('.icon-search').css('color', '#CAD3DC');
@@ -190,11 +205,11 @@ $(document).ready(function(){
         });
     };
 
-    function debounce(fn, delay) {
+    function debounce (fn, delay) {
         var timer;
         delay = delay || 120;
 
-        return function () {
+        return function() {
             var ctx = this;
             var args = arguments;
             var later = function() {
@@ -210,7 +225,7 @@ $(document).ready(function(){
     /**
      * Night mode
      */
-    function nightMode() {
+    function nightMode () {
         var el = $('body');
         var className = 'night-mode';
 
@@ -229,7 +244,7 @@ $(document).ready(function(){
     /**
      * Copy and copyright
      */
-    function setClipboardData(str) {
+    function setClipboardData (str) {
         str += '\n\n著作权归作者所有。\n商业转载请联系作者获得授权,非商业转载请注明出处。\n原文: ' + location.href;
         $('.post-content').on('copy', function(e) {
             var data = window.clipboardData || e.originalEvent.clipboardData;
