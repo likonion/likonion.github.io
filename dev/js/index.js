@@ -5,13 +5,17 @@ $(document).ready(function() {
 
     (function() {
         var ele = document.querySelector('.header-img');
-        var imgUrl = 'https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/hero.jpg';
-        var imgObject = new Image();
+        if (ele) {
+            var imgUrl = 'https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/hero.jpg';
+            var imgObject = new Image();
 
-        imgObject.src = imgUrl;
-        imgObject.onload = function() {
+            imgObject.src = imgUrl;
+            imgObject.onload = function() {
+            }
+            // iOS 中只能在 onload 事件后设置原图路径才能生效
+            ele.src = imgUrl;
         }
-        ele.src = imgUrl;
+
     })()
 
     var nav = $('.g-nav');
