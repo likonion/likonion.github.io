@@ -1,49 +1,85 @@
 @media screen and (min-width: 1920px) {
     .home-banner {
         height: 600px;
+
         h2 {
             padding-top: 260px;
             font-size: 42px;
         }
+
         h3 {
             font-size: 22px;
         }
     }
 }
 
+
+
 @media screen and (max-width: $g-container-w) {
+    .home-banner {
+        .header-img {
+            width: 1150px;
+            left: -200px;
+        }
+    }
+
+
     .g-container {
         width: auto;
     }
+
     .article-list {
         float: none;
         margin: 0 auto;
     }
+
     .g-sidebar {
         display: none;
     }
+
     .search-card {
         margin: 10px 0;
     }
-    .pagination  {
+
+    .pagination {
         .page-num {
             display: none;
         }
+
         .page-link {
             width: 56px;
         }
     }
 }
-
+@media screen and (max-width: 1200px) {
+    .home-banner {
+        .header-img {
+            width: 1200px;
+            left: 0px;
+        }
+    }
+}
 @media screen and (max-width: 768px) {
-    .post-wrapper, .markdown-body, .read-next {
+    .home-banner {
+        .header-img {
+            width: 1200px;
+            left: -300px;
+        }
+    }
+
+
+    .post-wrapper,
+    .markdown-body,
+    .read-next {
         width: 92%;
     }
+
     .post-content {
         .post-subtitle {
             width: 92%;
         }
     }
+
     .author-detail {
         .author-card {
             width: 92%;
@@ -52,13 +88,22 @@
 }
 
 @media screen and (max-width: 695px) {
+    .home-banner {
+        .header-img {
+            width: 1150px;
+            left: -400px;
+        }
+    }
+
     .g-header {
         position: absolute;
         top: 0;
         padding: 28px 0;
+
         .icon-menu {
             display: block;
         }
+
         .g-nav {
             position: relative;
             top: 48px;
@@ -69,11 +114,13 @@
             border-radius: 2px;
             padding: 8px 16px;
             box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
-            &>ul>li{
+
+            &>ul>li {
                 float: none;
                 height: auto;
                 line-height: normal;
                 margin-right: 0;
+
                 &>a {
                     display: block;
                     padding: 16px 0;
@@ -90,9 +137,11 @@
         .author-card {
             .sns-links {
                 margin-top: 24px;
+
                 li {
                     width: 36px;
                     height: 36px;
+
                     .iconfont {
                         font-size: 32px;
                         line-height: 40px;
@@ -100,6 +149,7 @@
                 }
             }
         }
+
         .comment {
             width: 90%;
         }
@@ -108,18 +158,23 @@
     .read-next {
         display: block;
     }
+
     .read-next-item {
         margin-bottom: 16px;
+
         &:first-child {
             margin-right: 0;
         }
+
         &:last-child {
             margin-bottom: 0;
         }
+
         &:hover {
             top: 0;
             box-shadow: none;
         }
+
         section {
             width: 90%;
             margin-left: 5%;
@@ -130,23 +185,31 @@
     .g-banner {
         padding: 0 20px;
     }
-    .home-banner, .tags-banner {
+
+    .home-banner,
+    .tags-banner {
         h3 {
             margin-top: 8px;
         }
     }
+
     .home-content {
         margin-top: 0;
     }
-    .article-list, .tags-content {
+
+    .article-list,
+    .tags-content {
         width: 100%;
     }
+
     .tags-content {
         margin-top: 0;
     }
+
     .tags-banner {
         height: 300px;
     }
+
     .tags-list {
         padding: 0 0 24px;
     }
@@ -160,23 +223,31 @@
 @media screen and (max-width: 500px) {
     .home-banner {
         height: 400px;
+
+        .header-img {
+            width: 1000px;
+            left: -400px;
+        }
+
         h2 {
             padding-top: 180px;
             font-size: 28px;
             line-height: 48px;
         }
+
         h3 {
             margin-top: 2px;
             font-size: 18px;
             letter-spacing: 6px;
         }
     }
+
     .home-content {
         margin-bottom: 32px;
     }
-    .search-card {
-        
-    }
+
+    .search-card {}
+
     .article-list {
         .article-item {
             padding: 20px 16px;
@@ -185,27 +256,34 @@
             border-right: none;
             border-radius: 0;
             box-shadow: none;
+
             &:first-child {
                 border-top: none;
             }
+
             .post-cover {
                 max-height: 200px;
             }
+
             .post-preview {
                 .post-title {
                     font-size: 18px;
                     line-height: 26px;
                 }
+
                 .post-subtitle {
                     font-size: 16px;
                     line-height: 20px;
                 }
             }
+
             .post-meta {
                 margin-top: 12px;
+
                 .post-tags {
                     display: none;
                 }
+
                 .post-date {
                     float: left;
                     margin-left: 5px;
@@ -213,55 +291,74 @@
             }
         }
     }
+
     .pagination {
         .page-links {
             box-shadow: none;
         }
     }
-    .post-header{
+
+    .post-header {
         padding: 0;
         height: 360px;
     }
+
     .post-wrapper {
         .post-tags {
             margin: 100px 0 8px;
         }
+
         h1 {
             font-family: "Helvetica Neue", Helvetica, Arial, "Pingfang SC", "Microsoft Yahei", Sans-serif;
         }
+
         .post-meta {
             margin-top: 16px;
         }
     }
+
     .post-content {
         padding-top: 20px;
+
         .post-subtitle {
             padding: 8px 0 24px;
             margin-bottom: 32px;
+
             &:before {
                 height: 0;
             }
         }
     }
+
     .markdown-body {
-        p, ul>li {
+
+        p,
+        ul>li {
             font-size: 16px;
             font-weight: 300;
             -webkit-font-smoothing: auto;
             -moz-osx-font-smoothing: auto;
         }
-        h1, h2, h3, h4 {
+
+        h1,
+        h2,
+        h3,
+        h4 {
             margin-top: 24px;
         }
+
         table {
             margin: 16px auto;
         }
+
         img {
             margin: 0 auto 16px;
         }
+
         strong {
             font-weight: 400;
         }
+
         blockquote {
             p {
                 font-size: 18px;
@@ -275,10 +372,16 @@
 
 @media screen and (max-width: 376px) {
     .home-banner {
+        .header-img {
+            width: 1000px;
+            left: -500px;
+        }
+
         h2 {
             font-size: 26px;
             line-height: 38px;
         }
+
         h3 {
             margin-top: 4px;
             font-size: 16px;
