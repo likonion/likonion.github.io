@@ -750,7 +750,8 @@ a {
   margin: -100px auto 0; }
   .subpage-content .demo-wrapper {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 40px 0; }
     .subpage-content .demo-wrapper .demo-item {
       width: 212px;
       border: 1px solid #e7eaf1;
@@ -831,6 +832,8 @@ a {
 @media (prefers-color-scheme: dark) {
   .night-mode {
     background-color: #282C33; }
+    .night-mode img {
+      -webkit-filter: brightness(0.6); }
     .night-mode .g-banner {
       background: #282C33;
       color: #C8CDD3; }
@@ -857,8 +860,7 @@ a {
     .night-mode .search-card input,
     .night-mode .search_result,
     .night-mode .search_item,
-    .night-mode .article-item .post-tag,
-    .night-mode .tags-card .tag,
+    .night-mode .article-item,
     .night-mode .tags-list li,
     .night-mode .tags-list .tag {
       color: #868A94;
@@ -870,6 +872,9 @@ a {
     .night-mode .article-item .post-preview .post-subtitle,
     .night-mode .article-item .post-preview .post-excerpt {
       color: #868A94; }
+    .night-mode .article-item .post-meta .post-tag {
+      background-color: #272b33;
+      box-shadow: none; }
     .night-mode .article-item .post-meta .post-tags,
     .night-mode .article-item .post-meta .post-date {
       color: #868A94; }
@@ -891,9 +896,11 @@ a {
     .night-mode .search_result .search_item:hover {
       background-color: transparent;
       color: #fff; }
-    .night-mode .article-item .post-tag,
-    .night-mode .tags-card .tag {
+    .night-mode .article-item {
       border: none; }
+    .night-mode .tags-card .tag {
+      background-color: #272b33;
+      box-shadow: none; }
     .night-mode .tags-list li .tag-name,
     .night-mode .tags-list li .tag-post {
       color: #868A94; }
@@ -959,7 +966,10 @@ a {
     .night-mode .token.deleted {
       color: #D75885; }
     .night-mode .token.keyword {
-      color: #61BDCF; } }
+      color: #61BDCF; }
+    .night-mode .subpage-content .demo-wrapper .demo-item {
+      background: #2d313a;
+      border-color: rgba(255, 255, 255, 0.1); } }
 
 @media screen and (min-width: 1920px) {
   .home-banner {

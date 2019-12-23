@@ -52,7 +52,7 @@ description: 本站记录我人生之旅的沿途风景！
                             {% endfor %}
                         {% endif %}
                     </div>
-                    <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+                    <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date:"%y-%m-%d" }}</time>
                 </footer>
             </article>
         {% endfor %}

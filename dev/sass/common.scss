@@ -779,6 +779,7 @@
     .demo-wrapper {
         display: flex;
         flex-wrap: wrap;
+        padding: 40px 0;
 
         .demo-item {
             width: 212px;
@@ -895,6 +896,10 @@
     .night-mode {
         background-color: $color-dark-primary;
 
+        img {
+            -webkit-filter: brightness(.6);
+        }
+
         .g-banner {
             background: $color-dark-primary;
             color: #C8CDD3;
@@ -945,8 +950,7 @@
         .search-card input,
         .search_result,
         .search_item,
-        .article-item .post-tag,
-        .tags-card .tag,
+        .article-item,
         .tags-list li,
         .tags-list .tag {
             color: $color-f-dark;
@@ -969,6 +973,11 @@
             }
 
             .post-meta {
+
+                .post-tag {
+                    background-color: #272b33;
+                    box-shadow: none;
+                }
 
                 .post-tags,
                 .post-date {
@@ -1021,9 +1030,13 @@
             }
         }
 
-        .article-item .post-tag,
-        .tags-card .tag {
+        .article-item{
             border: none;
+        }
+
+        .tags-card .tag {
+            background-color: #272b33;
+            box-shadow: none;
         }
 
         .tags-list {
@@ -1143,6 +1156,15 @@
 
         .token.keyword {
             color: #61BDCF;
+        }
+
+        .subpage-content {
+            .demo-wrapper {
+                .demo-item {
+                    background: #2d313a;
+                    border-color: rgba(255, 255, 255, .1);
+                }
+            }
         }
     }
 }
