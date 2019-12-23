@@ -951,11 +951,15 @@
         .search_result,
         .search_item,
         .article-item,
-        .tags-list li,
-        .tags-list .tag {
+        .tags-list li {
             color: $color-f-dark;
             background-color: $color-dark-secondary;
             border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .tags-list .tag {
+            background-color: #272b33;
+            box-shadow: none;
         }
 
         .article-item {
@@ -1030,7 +1034,7 @@
             }
         }
 
-        .article-item{
+        .article-item {
             border: none;
         }
 

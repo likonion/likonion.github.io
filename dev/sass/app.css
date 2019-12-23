@@ -861,11 +861,13 @@ a {
     .night-mode .search_result,
     .night-mode .search_item,
     .night-mode .article-item,
-    .night-mode .tags-list li,
-    .night-mode .tags-list .tag {
+    .night-mode .tags-list li {
       color: #868A94;
       background-color: #2D313A;
       border-color: rgba(255, 255, 255, 0.1); }
+    .night-mode .tags-list .tag {
+      background-color: #272b33;
+      box-shadow: none; }
     .night-mode .article-item .post-cover img {
       -webkit-filter: brightness(0.6); }
     .night-mode .article-item .post-preview .post-title,
