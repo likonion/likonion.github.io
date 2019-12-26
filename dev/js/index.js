@@ -256,11 +256,11 @@ $(document).ready(function() {
             e.preventDefault();
         });
     }
-    $('.post-content').on('mouseup', function(e) {
-        var txt = window.getSelection();
-        if (txt.toString().length >= 30) {
-            setClipboardData(txt);
-        }
-    });
+    // $('.post-content').on('mouseup', function(e) {
+    //     var txt = window.getSelection();
+    //     if (txt.toString().length >= 30) {
+    //         setClipboardData(txt);
+    //     }
+    // });
 
 });
