@@ -87,7 +87,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/thumb.png
     </script>
     ```
 
-## 函数防抖
+## 函数节流
 
 >  **每隔一段时间，只执行一次函数。**
 
