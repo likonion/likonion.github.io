@@ -8,7 +8,7 @@ tags: debounce throttle
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/thumb.png
 ---
 
-函数防抖和函数节流：优化高频率执行js代码的一种手段，js中的一些事件如浏览器的resize、scroll，鼠标的mousemove、mouseover，input输入框的keypress等事件在触发时，会不断地调用绑定在事件上的回调函数，极大地浪费资源，降低前端性能。为了优化体验，需要对这类事件进行调用次数的限制。
+函数防抖和函数节流：优化高频率执行js代码的一种手段，js中的一些事件如浏览器的 `resize` 、`scroll` ，鼠标的 `mousemove` 、`mouseover`，input输入框的 `keypress` 等事件在触发时，会不断地调用绑定在事件上的回调函数，极大地浪费资源，降低前端性能。为了优化体验，需要对这类事件进行调用次数的限制。
 
 ## 函数防抖
 
