@@ -7,7 +7,8 @@ keywords: HTML, CSS, JavaScript
 tags: HTML CSS JavaScript
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1*l4xICbIIYlz1OTymWCoUTw.jpeg
 ---
-
+* content
+{:toc}
 ## 一、HTML编码规范
 
 ### 1. img标签要写alt属性

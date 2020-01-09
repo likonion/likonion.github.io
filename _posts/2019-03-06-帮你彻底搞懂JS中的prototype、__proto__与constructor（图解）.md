@@ -6,7 +6,8 @@ description: some word here
 tags: prototype __proto__ constructor
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/2017-10-22_133351.jpg
 ---
-
+* content
+{:toc}
 作为一名前端工程师，必须搞懂JS中的 `prototype` 、`__proto__`与`constructor`属性，相信很多初学者对这些属性存在许多困惑，容易把它们混淆，本文旨在帮助大家理清它们之间的关系并彻底搞懂它们。这里说明一点，`__proto__`属性的两边是各由两个下划线构成。
 
 

@@ -6,7 +6,8 @@ description: 用微PE在UEFI+GPT模式下安装WIN7、WIN10教程
 tags: windows
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/toge_excel1066.png
 ---
-
+* content
+{:toc}
 本教程一共制作了在UFEI+GPT模式下安装GHO封装格式的64位WIN7系统、WIM封装格式的64位WIN7系统和ISO格式的MSDN原版镜像64位WIn10系统。
 这3种文件格式的系统镜像基本包含了主流镜像文件，安装方法基本相同，都是从U盘启动进PE，使用CGI备份还原工具安装系统到GPT磁盘上，建立UEFI引导。
 其中ISO原版镜像和WIN封装镜像可自动建立引导，GHO封装格式镜像须手动修复UEFI引导。

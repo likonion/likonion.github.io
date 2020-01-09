@@ -7,7 +7,8 @@ keywords:
 tags: VUE
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1*PHmNXbvOfg5AHiMWWuaRXg.jpeg
 ---
-
+* content
+{:toc}
 # 前言
 现在 vue 已经是火了不能再火的前端框架了，但是自己一直坚持先将原生 JavaScript 学好之后再开始学习框架，所以入手 vue 的时间就比较晚。对之前在慕课网的项目做一个总结 vue 的视频（有兴趣的可以加我微信要资源），相信大家很多人都已经了解了这个项目，也有很多人有项目的源码，然后我就按照视频和源码重写了一遍。
 

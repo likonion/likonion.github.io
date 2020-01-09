@@ -5,7 +5,8 @@ categories: 工具
 description: some word here
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/linux-vi1.jpg
 ---
-
+* content
+{:toc}
 Linux发行版系统上都会默认内置vi编辑器，非常通用。很多软件的编辑接口都会默认调用vi；vi具有程序编辑的能力；vi程序简单，编辑速度相当快速。
 
 ## vi的三种模式

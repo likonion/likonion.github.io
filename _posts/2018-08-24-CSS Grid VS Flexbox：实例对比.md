@@ -6,7 +6,8 @@ description: some word here
 tags: grid flexbox
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/675733-cad4d95cbb4c9fc0.jpg
 ---
-
+* content
+{:toc}
 不久以前，所有 HTML 页面的布局还都是通过 tables、floats 以及其他的 CSS 属性来完成的。面对复杂页面的布局，却没有很好的办法。
 
 然而 Flexbox 的出现，便轻松的解决了复杂的 Web 布局。它是一种专注于创建稳定的响应式页面的布局模式，并可以轻松地正确对齐元素及其内容。如今已是大多数 Web 开发人员首选的 CSS 布局方式。

@@ -6,7 +6,8 @@ description: github fork update
 tags: GitHub fork
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/github-logo.png
 ---
-
+* content
+{:toc}
 github上fork了别人的项目后，再同步更新别人的提交
 
 ## github网站上操作

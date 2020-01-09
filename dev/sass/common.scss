@@ -1077,10 +1077,26 @@
             color: $color-f-dark;
 
             table {
-                td {
-                    background-color: #282c33;
-                    border-color: #454648;
+                thead {
+                    tr {
+                        background-color: #383d48;
+
+                        th{
+                            border-color: #52575f;
+                        }
+                    }
                 }
+
+                tbody {
+                    tr {
+                        background-color: #13151b;
+
+                        td {
+                            border-color: #52575f;
+                        }
+                    }
+                }
+
             }
 
             img {

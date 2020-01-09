@@ -6,7 +6,8 @@ description: some word here
 tags: JavaScript ES6
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/logo.png
 ---
-
+* content
+{:toc}
 翻译自：[30 seconds of code](https://github.com/Chalarangelo/30-seconds-of-code)
 
 精心收集的有用的 JavaScript 代码片段，你可以在30秒或更少的时间内理解。 有了这些代码片段，获取你可以完全抛弃 Lodash 或 Underscore。

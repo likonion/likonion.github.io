@@ -6,7 +6,8 @@ description: some word here
 tags: JavaScript
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1-1F919104H63N.jpg
 ---
-
+* content
+{:toc}
 ## 第2章 在 HTML 中使用 JavaScript
 
 ### 2.1 \<script>元素

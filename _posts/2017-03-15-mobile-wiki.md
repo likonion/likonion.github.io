@@ -6,7 +6,8 @@ description: some word here
 keywords: mobile, 移动端
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/a7aa6ff5435d5e1_size59_w1200_h799.jpg
 ---
-
+* content
+{:toc}
 ### body、document、window的click事件无效处理办法
 在做移动端效果的时候，会碰到做弹窗的效果，弹窗之后点击空白处关闭弹窗，但是苹果手机上的QQ浏览器UC浏览器都点击body、document、window无效。最后找到了解决办法，
 

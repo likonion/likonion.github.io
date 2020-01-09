@@ -6,7 +6,8 @@ description: Javascript or jQuery实现页面滚动时导航智能定位
 tags: JavaScript jQuery
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/20160628110530781.jpg
 ---
-
+* content
+{:toc}
 本篇文章主要介绍了Javascript或者jQuery实现页面滚动时导航智能定位，具有一定的参考价值，感兴趣的小伙伴们可以参考一下
 
 常见的开发页面中可能会有这么一个需求，页面中会有多个模块，每个模块对应一个导航，当页面滚动到某个模块时，对应的模块导航需要加上一个类用于区分当前用户所浏览区域。

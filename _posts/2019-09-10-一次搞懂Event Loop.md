@@ -6,7 +6,8 @@ description: some word here
 tags: Event Loop
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/event-loop.png
 ---
-
+* content
+{:toc}
 几乎在每一本JS相关的书籍中，都会说JS是单线程的，JS是通过事件队列(Event Loop)的方式来实现异步回调的。
 对很多初学JS的人来说，根本搞不清楚单线程的JS为什么拥有异步的能力，所以，我试图从进程、线程的角度来解释这个问题。
 

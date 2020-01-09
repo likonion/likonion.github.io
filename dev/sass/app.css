@@ -916,9 +916,14 @@ a {
         background-color: #575B63; }
     .night-mode .markdown-body {
       color: #868A94; }
-      .night-mode .markdown-body table td {
-        background-color: #282c33;
-        border-color: #454648; }
+      .night-mode .markdown-body table thead tr {
+        background-color: #383d48; }
+        .night-mode .markdown-body table thead tr th {
+          border-color: #52575f; }
+      .night-mode .markdown-body table tbody tr {
+        background-color: #13151b; }
+        .night-mode .markdown-body table tbody tr td {
+          border-color: #52575f; }
       .night-mode .markdown-body img {
         -webkit-filter: brightness(0.6); }
       .night-mode .markdown-body blockquote {

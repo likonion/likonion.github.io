@@ -6,7 +6,8 @@ description: Chrome devtools
 tags: chrome Chrome devtools
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/chrome-devtools.jpeg
 ---
-
+* content
+{:toc}
 相信绝大部分的前端是使用Chrome进行开发的，一方面Chrome浏览器确实做得好，更重要的一方面是因为Chrome有一个无法匹敌的调试工具。用好这个调试工具可以提高编程效率，帮助快速地定位问题。
 
 ## 01 打印

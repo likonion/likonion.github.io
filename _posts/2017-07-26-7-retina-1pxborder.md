@@ -6,7 +6,8 @@ description: JavaScript
 tags: JavaScript Retina 移动前端 CSS border
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1pximage.jpeg
 ---
-
+* content
+{:toc}
 在之前的项目中，UI告诉我说我们移动项目中的边框全部都变粗了。原谅我的近视眼，为什么我看不出什么差距了，结果UI把他的设计稿跟我的屏幕截图跟我看，居然真的不一样！！！
 没有办法，只有在后面的版本中去修改了，但是要改的话，需要知道是为什么。所以查了很多资料，终于搞懂了这个问题，并且总结了几种方法。
 

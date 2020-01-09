@@ -7,7 +7,8 @@ keywords: JavaScript
 tags: 
 cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/logoOg.png
 ---
-
+* content
+{:toc}
 原生JavaScript实现index
 
 ```html
