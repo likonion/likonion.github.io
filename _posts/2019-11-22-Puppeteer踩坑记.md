@@ -91,12 +91,13 @@ await page.$eval('a', a => a.click());
 一些网站会通过检测 `window.navigator` 下的几个参数来判断是否是爬虫，可以通过以下设置避免识别
 
 ```js 
- await page.evaluateOnNewDocument(() => {
+await page.evaluateOnNewDocument(() => {
     Object.defineProperties(navigator, { webdriver: { get: () => false } });
     window.navigator.chrome = { runtime: {}, };
     Object.defineProperty(navigator, 'languages', { get: () => ['en - US', 'en'] });
     Object.defineProperty(navigator, 'plugins', { get: () => [1, 2, 3, 4, 5, 6], });
 })
+await page.goto('url');
 ```
 
 
