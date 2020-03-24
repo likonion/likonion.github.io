@@ -100,6 +100,15 @@ await page.evaluateOnNewDocument(() => {
 await page.goto('url');
 ```
 
+### 清空输入框的值
+
+通过点击两次或者三次鼠标来选中输入框的值，然后再按删除键来删除
+
+```js
+await page.click('selector', {clickCount: 2});
+await page.keyboard.press('Backspace');
+```
+
 
 
 
