@@ -5,7 +5,7 @@ categories: 前端技术
 description: HTML/CSS/JS编码规范
 keywords: HTML, CSS, JavaScript
 tags: HTML CSS JavaScript
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1*l4xICbIIYlz1OTymWCoUTw.jpeg
+cover: /assets/media/1*l4xICbIIYlz1OTymWCoUTw.jpeg
 ---
 * content
 {:toc}

@@ -4,7 +4,7 @@ title: Javascript or jQuery实现页面滚动时导航智能定位
 categories: 前端技术
 description: Javascript or jQuery实现页面滚动时导航智能定位
 tags: JavaScript jQuery
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/20160628110530781.jpg
+cover: /assets/media/20160628110530781.jpg
 ---
 * content
 {:toc}

@@ -4,7 +4,7 @@ title: 95 个超实用的 JavaScript 代码片段（ ES6+ 编写）
 categories: 前端技术
 description: some word here
 tags: JavaScript ES6
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/logo.png
+cover: /assets/media/logo.png
 ---
 * content
 {:toc}

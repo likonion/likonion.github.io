@@ -5,7 +5,7 @@ categories: 前端技术
 description: You Don't Need jQuery
 tags: JavaScript jQuery
 keywords: JavaScript, jQuery
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/maxresdefault.jpg
+cover: /assets/media/maxresdefault.jpg
 ---
 * content
 {:toc}

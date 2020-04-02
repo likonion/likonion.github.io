@@ -4,7 +4,7 @@ title: JavaScript高级程序设计(第3版)读书笔记
 categories: 前端技术
 description: some word here
 tags: JavaScript
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1-1F919104H63N.jpg
+cover: /assets/media/1-1F919104H63N.jpg
 ---
 * content
 {:toc}

@@ -4,7 +4,7 @@ title: 移动端开发遇到的坑
 categories: 前端技术
 description: some word here
 keywords: mobile, 移动端
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/a7aa6ff5435d5e1_size59_w1200_h799.jpg
+cover: /assets/media/a7aa6ff5435d5e1_size59_w1200_h799.jpg
 ---
 * content
 {:toc}

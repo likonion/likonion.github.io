@@ -4,7 +4,7 @@ title: CSS：你真的会用 z-index 吗？
 categories: 前端技术
 description: some word here
 tags: z-index
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/x-y-z-axis1.png
+cover: /assets/media/x-y-z-axis1.png
 ---
 * content
 {:toc}
@@ -15,7 +15,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/x-y-z-axis1
 
 但“z 轴”顺序，不完全由 `z-index` 决定，在层叠比较复杂的 HTML 元素上使用 `z-index` 时，结果可能让人觉得困惑，甚至不可思议。这是由复杂的元素排布规则导致的。
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/16b0300df37b3bda)
+![](/assets/media/16b0300df37b3bda)
 
 ### 不含 z-index 元素如何堆叠？
 
@@ -27,7 +27,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/x-y-z-axis1
 
 **注意：普通流中的“无定位块级元素”始终先于“定位元素”渲染，并出现在“定位元素”下层，即便它们在HTML结构中出现的位置晚于定位元素也是如此。**
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/16b030bbb02e863b)
+![](/assets/media/16b030bbb02e863b)
 
 
 ### float 如何影响堆叠？
@@ -40,7 +40,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/x-y-z-axis1
 4. 位于普通流中的后代“无定位行内元素”；
 5. 后代中的“定位元素”，按它们在HTML中的出现顺序堆叠；
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/16b0307946e768e6)
+![](/assets/media/16b0307946e768e6)
 
 ## 堆叠上下文（Stacking Context）
 
@@ -64,7 +64,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/x-y-z-axis1
 
 **注：层叠上下文的层级是 HTML 元素层级的一个层级，因为只有某些元素才会创建层叠上下文。可以这样说，没有创建自己的层叠上下文的元素 将被父层叠上下文包含。**
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/16b03117461de04d)
+![](/assets/media/16b03117461de04d)
 
 ### 堆叠上下文如何影响堆叠？
 
@@ -176,7 +176,7 @@ div.lev3 {
 
 </body></html>
 ```
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/16b03135bd818b83.jpg)
+![](/assets/media/16b03135bd818b83.jpg)
 
 ## 最佳实践（不犯二准则）
 

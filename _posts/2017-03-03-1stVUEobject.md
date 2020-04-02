@@ -5,7 +5,7 @@ categories: 前端技术
 description: some word here
 keywords:
 tags: VUE
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1*PHmNXbvOfg5AHiMWWuaRXg.jpeg
+cover: /assets/media/1*PHmNXbvOfg5AHiMWWuaRXg.jpeg
 ---
 * content
 {:toc}
@@ -154,7 +154,7 @@ vue、react、angular 和传统的 jQuery 开发的主要区别就是对 view �
 
 之后会进入安装阶段，需要输入一些项目的信息
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/df2ad4b3b4ec752a479fd472c7ad69f4.jpeg)
+![](/assets/media/df2ad4b3b4ec752a479fd472c7ad69f4.jpeg)
 vue-cli安装成功
 之后就按照提示执行下面命令安装一些 npm 包然后启动项目
 
@@ -165,7 +165,7 @@ npm run dev
 ```
 然后我们就可以在我们的浏览器中看到自动打开了一个 http://localhost:8080/#/ ，这就是我们的第一个 vue 项目。
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/11c5077d875635e42962ead2bd0d5e5d.jpeg)
+![](/assets/media/11c5077d875635e42962ead2bd0d5e5d.jpeg)
 第一个vue项目
 ## 目录结构
 
@@ -646,7 +646,7 @@ new Vue({
 7. 使用 router-link to
 然后在 template 中使用 router-link to 就可以通过路由访问对应的 component
 8. 我们就可以通过 http://localhost:8080/#/goods 访问到商品的页面，http://localhost:8080/#/ratings 可以访问评论页面
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/68333cb6549a82252e9e43123447e11f.jpeg)
+![](/assets/media/68333cb6549a82252e9e43123447e11f.jpeg)
 评论页面
 
 ## 数据 mock
@@ -698,7 +698,7 @@ app.use('/api', apiRoutes);
 
 比如我们访问 `http://localhost:8080/api/goods`，就可以访问到刚刚设置的 data.json 中的 goods 对象中的数据。
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/d9ac6cce492d487668d6d857a2f754ec.jpeg)
+![](/assets/media/d9ac6cce492d487668d6d857a2f754ec.jpeg)
 goods数据
 
 # 使用 vue-resource 请求数据
@@ -731,7 +731,7 @@ this.$http.get('/api/seller').then((response) => {
 
 # v-on
 我们先来看一下默认的主页面是如何实现的，首先在最上面是一个 header 组件，点击 header 之后会出现商家信息的弹出层
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/76adcc76fbb126a212e23896e0253508.jpeg)
+![](/assets/media/76adcc76fbb126a212e23896e0253508.jpeg)
 header 弹出层
 我们就来看一下这个点击是怎么实现的。
 ```vue
@@ -773,7 +773,7 @@ v-show 指令是控制元素的显示和隐藏，当 v-show 的值为 true 的�
 ## v-bind
 然后我们点击了 header 之后显示了 detail 页面，我们可以看到：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/22df5f3481ea64b4e6cab4d81e07f4d9.jpeg)
+![](/assets/media/22df5f3481ea64b4e6cab4d81e07f4d9.jpeg)
 header-detail
 这里前面的 icon 是怎么实现的呢，不同的活动对应不同的 icon，并且每一个商家的活动也都不相同。
 
@@ -805,7 +805,7 @@ created() {
 
 我们用 v-for 指令根据一组数组的选项列表进行渲染。v-for 指令需要使用 item in items 形式的特殊语法，items 是源数据数组并且 item 是数组元素迭代的别名。
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/22df5f3481ea64b4e6cab4d81e07f4d9-2.jpeg)
+![](/assets/media/22df5f3481ea64b4e6cab4d81e07f4d9-2.jpeg)
 header-detail
 比如在 header 中，这部分就可以使用 v-for
 ```vue
@@ -837,7 +837,7 @@ vue 中实现动画的操作有好多种，比如可以使用 vue 自带的 `tra
   background: rgba(7, 17, 27, 0)
 ```
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/2591fef644eb9649e6faaa8b4d5d02d4.png)
+![](/assets/media/2591fef644eb9649e6faaa8b4d5d02d4.png)
 transition
 
 # ref
@@ -890,7 +890,7 @@ props: {
 3. 这样我们就可以再子组件中使用父组件传入的数据了。
 # 子组件向父组件传值
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/2204ec94f52e15a280721b0fc48e6873.jpeg)
+![](/assets/media/2204ec94f52e15a280721b0fc48e6873.jpeg)
 购物车控制器
 在这个里面，子组件是 cartcontrol，父组件是 goods 商品页面。
 

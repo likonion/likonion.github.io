@@ -4,7 +4,7 @@ title: 一次搞懂Event Loop
 categories: 前端技术
 description: some word here
 tags: Event Loop
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/event-loop.png
+cover: /assets/media/event-loop.png
 ---
 * content
 {:toc}
@@ -17,14 +17,14 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/event-loop.
 对很多初学JS的人来说，根本搞不清楚单线程的JS为什么拥有异步的能力，所以，我试图从进程、线程的角度来解释这个问题。
 
 ## CPU
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1.png)
+![](/assets/media/1.png)
 
 计算机的核心是CPU，它承担了所有的计算任务。
 
 它就像一座工厂，时刻在运行。
 
 ## 进程
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/2.png)
+![](/assets/media/2.png)
 
 假定工厂的电力有限，一次只能供给一个车间使用。
 也就是说，一个车间开工的时候，其他车间都必须停工。
@@ -35,7 +35,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/event-loop.
 CPU使用时间片轮转进度算法来实现同时运行多个进程。
 
 ## 线程
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/3.png)
+![](/assets/media/3.png)
 
 一个车间里，可以有很多工人，共享车间所有的资源，他们协同完成一个任务。
 
@@ -56,7 +56,7 @@ CPU使用时间片轮转进度算法来实现同时运行多个进程。
 
 而对于浏览器来说，浏览器就是多进程的，我在Chrome浏览器中打开了多个tab，然后打开windows控制管理器：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/4.png)
+![](/assets/media/4.png)
 
 如上图，我们可以看到一个Chrome浏览器启动了好多个进程。
 
@@ -145,7 +145,7 @@ CPU使用时间片轮转进度算法来实现同时运行多个进程。
 * 事件触发线程管理一个`任务队列`，异步任务触发条件达成，将回调事件放到`任务队列`中
 * `执行栈`中所有同步任务执行完毕，此时JS引擎线程空闲，系统会读取`任务队列`，将可运行的异步任务回调事件添加到`执行栈`中，开始执行
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/5.png)
+![](/assets/media/5.png)
 
 在前端开发中我们会通过`setTimeout/setInterval`来指定定时任务，会通过`XHR/fetch`发送网络请求，
 接下来简述一下`setTimeout/setInterval`和`XHR/fetch`到底做了什么事
@@ -163,7 +163,7 @@ CPU使用时间片轮转进度算法来实现同时运行多个进程。
 
 用一张图来解释：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/6.png)
+![](/assets/media/6.png)
 
 再用代码来解释一下：
 
@@ -227,7 +227,7 @@ document.body.style = 'background:grey';
 
 我们可以将这段代码放到浏览器的控制台执行以下，看一下效果：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/7.gif)
+![](/assets/media/7.gif)
 
 我们会看到的结果是，页面背景会在瞬间变成白色，以上代码属于同一次`宏任务`，所以全部执行完才触发`页面渲染`，渲染时`GUI线程`会将所有UI改动优化合并，所以视觉效果上，只会看到页面变成灰色。
 
@@ -242,7 +242,7 @@ setTimeout(function(){
 
 执行一下，再看效果：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/8.gif)
+![](/assets/media/8.gif)
 
 我会看到，页面先显示成蓝色背景，然后瞬间变成了黑色背景，这是因为以上代码属于两次`宏任务`，第一次`宏任务`执行的代码是将背景变成蓝色，然后触发渲染，将页面变成蓝色，再触发第二次宏任务将背景变成黑色。
 
@@ -268,7 +268,7 @@ console.log(3);
 
 执行一下，再看效果：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/10.gif)
+![](/assets/media/10.gif)
 
 控制台输出 1 3 2 , 是因为 promise 对象的 then 方法的回调函数是异步执行，所以 2 最后输出
 
@@ -305,7 +305,7 @@ setTimeout(() ={
 * 当前`宏任务`执行完毕，开始检查渲染，然后`GUI线程`接管渲染
 * 渲染完毕后，`JS线程`继续接管，开始下一个`宏任务`（从事件队列中获取）
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/9.png)
+![](/assets/media/9.png)
 
 ## 参考
 * [WebKit技术内幕](https://book.douban.com/subject/25910556/)

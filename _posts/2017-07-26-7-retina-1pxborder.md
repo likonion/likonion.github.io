@@ -4,7 +4,7 @@ title: 7种方法解决移动端Retina屏幕1px边框问题
 categories: 前端技术
 description: JavaScript
 tags: JavaScript Retina 移动前端 CSS border
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1pximage.jpeg
+cover: /assets/media/1pximage.jpeg
 ---
 * content
 {:toc}
@@ -26,7 +26,7 @@ hairlines”（retina 极细的线）：在retina屏上仅仅显示1物理像素
 他们曾介绍到 iOS 8 和 OS X Yosemite 即将支持 0.5px 的边框：
 
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/15012098142792.jpg)
+![](/assets/media/15012098142792.jpg)
 
 
 额的神呐！so easy! 果真如此吗？
@@ -72,7 +72,7 @@ if (testElem.offsetHeight == 1) {
 ### 2、使用border-image实现
 
 准备一张符合你要求的border-image：
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/15012098291614.jpg)
+![](/assets/media/15012098291614.jpg)
 
 
 
@@ -86,7 +86,7 @@ if (testElem.offsetHeight == 1) {
 ```
 
 上文是把border设置在边框的底部，所以使用的图片是2px高，上部的1px颜色为透明，下部的1px使用视觉规定的border的颜色。如果边框底部和顶部同时需要border，可以使用下面的border-image：
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/15012098395005.png)
+![](/assets/media/15012098395005.png)
 
 
 

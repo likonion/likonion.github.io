@@ -4,7 +4,7 @@ title: Mac上使用Item2+lrzsz+autossh管理Linux服务器
 categories: 工具
 description: some word here
 tags: Item2 autossh
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/img_no.gif.jpeg
+cover: /assets/media/img_no.gif.jpeg
 ---
 * content
 {:toc}
@@ -61,11 +61,11 @@ chmod +x iterm2-recv-zmodem.sh iterm2-send-zmodem.sh
 
 打开iTerm2 -> Preferences -> Profiles 选择 Advanced 设置 Triggers ，点击 Edit
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1637d8adabcfd4bc.png)
+![](/assets/media/1637d8adabcfd4bc.png)
 
 在弹出窗口中进行如下配置，最后的Instant一定要勾选上。
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1637d8adb3ad407e.png)
+![](/assets/media/1637d8adb3ad407e.png)
 
 配置的具体内容在这里
 
@@ -153,10 +153,10 @@ export PATH=$PATH:$autossh
 
 保存servers.json，执行autossh，即可看到相应服务器信息，输入对应序号，即可自动登录到服务器。下面的动图是借用官方的，原谅一下自己的懒惰 :-D
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1637d8adb28085d6.gif)
+![](/assets/media/1637d8adb28085d6.gif)
 
 ## 用iTerm自动调用
 
 前文说过，我在iTerm里面建立了一个叫Remote的Profile，目的就是为了在使用CMD+O打开一个新窗口的时候自动执行autossh，那么我们还需要在iTerm里面添加一点配置，打开窗口时自动运行一段shell。如下图
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/1637d8adb29f77a4.png)
+![](/assets/media/1637d8adb29f77a4.png)

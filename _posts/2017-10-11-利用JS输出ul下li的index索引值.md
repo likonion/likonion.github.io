@@ -5,7 +5,7 @@ categories: 前端技术
 description: some word here
 keywords: JavaScript
 tags: 
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/logoOg.png
+cover: /assets/media/logoOg.png
 ---
 * content
 {:toc}

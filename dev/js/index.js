@@ -6,7 +6,7 @@ $(document).ready(function() {
     (function() {
         var ele = document.querySelector('.header-img');
         if (ele) {
-            var imgUrl = 'https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/hero.jpg';
+            var imgUrl = '/assets/media/hero.jpg';
             var imgObject = new Image();
 
             imgObject.src = imgUrl;

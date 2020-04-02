@@ -5,7 +5,7 @@ categories: 前端技术
 description: some word here
 keywords: debounce, throttle
 tags: debounce throttle
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/thumb.png
+cover: /assets/media/thumb.png
 ---
 * content
 {:toc}
@@ -43,7 +43,7 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/thumb.png
 2. 实例
     
     在input事件使用 `debounce` ，减少触发次数，这里设置延迟为1秒，是不是有点像搜索引擎的提示呈现
-    ![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/GIF.gif)
+    ![](/assets/media/GIF.gif)
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -124,12 +124,12 @@ cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/thumb.png
 
     这里同样使用上面的例子，看看有什么区别
     * 使用throttle，设置1秒只能触发一次
-    ![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/GIF-1564489890628.gif)
+    ![](/assets/media/GIF-1564489890628.gif)
 
 
     如果还看不出区别，请看下图
     * 使用debounce ，设置延迟为1秒
-    ![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/GIF-1564489668561.gif)
+    ![](/assets/media/GIF-1564489668561.gif)
 
     很明显了对吧
 

@@ -4,7 +4,7 @@ title: Puppeteer踩坑记
 categories: 前端技术
 description: 记录 puppeteer 使用中遇到的问题
 tags: puppeteer node
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/0*WHo7bG8yHKyt_nzn.png
+cover: /assets/media/0*WHo7bG8yHKyt_nzn.png
 ---
 * content
 {:toc}

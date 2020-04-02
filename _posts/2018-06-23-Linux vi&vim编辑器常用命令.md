@@ -3,7 +3,7 @@ layout: post
 title: Linux vi/vim编辑器常用命令
 categories: 工具
 description: some word here
-cover: https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/linux-vi1.jpg
+cover: /assets/media/linux-vi1.jpg
 ---
 * content
 {:toc}
@@ -19,7 +19,7 @@ Linux发行版系统上都会默认内置vi编辑器，非常通用。很多软�
 
 一张图来说明一下，简洁明了：
 
-![](https://likonion-1254082995.cos.ap-chengdu.myqcloud.com/media/760572-20171029221448898-3300940.png)
+![](/assets/media/760572-20171029221448898-3300940.png)
 
 ## vi的启动和退出
 
