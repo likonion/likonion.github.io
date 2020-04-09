@@ -109,6 +109,9 @@ await page.click('selector', {clickCount: 2});
 await page.keyboard.press('Backspace');
 ```
 
+### page.exposeFunction(name, puppeteerFunction)
+
+此方法会出现页面停滞不动现象，原因不明
 
 
 
