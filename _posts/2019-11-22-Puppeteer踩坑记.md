@@ -12,27 +12,7 @@ cover: /assets/media/0*WHo7bG8yHKyt_nzn.png
 
 ### 等待请求结果
 
-当网络请求返回太快时，用 `page.waitForResponse()` 来等待会不稳定或者会错过返回，所以使用 `page.on('response')` 来监听最可靠
-
-```js
-let resData = null;
-sync function getRes (res) {
-    if (res.url() === 'url' && res.status() === 200) {
-        const resJson = await res.json();
-        resData = resJson.data;
-    }
-}
-page.on('response', getRes)
-await page.click('selector');
-for (let i = 0; i < 30; i++) {
-    if (resData === null) {
-        await page.waitFor(1000);
-    } else {
-        page.removeListener('response', getRes);
-        break;
-    }
-}
-```
+当网络请求返回太快时，用 `page.waitForResponse()` 来等待会不稳定或者会来不及拦截，所以使用 `page.on('response')` 来监听最可靠
 
 ```js
 const get = new Promise(res =>{
