@@ -35,15 +35,17 @@ for (let i = 0; i < 30; i++) {
 ```
 
 ```js
-const get = new Promise(res =>
-    page.on('response', async (res_i) => {
-        if (res_i.url() === 'url' && res_i.status() === 200) {
+const get = new Promise(res =>{
+    async function getData(res_i) {
+         if (res_i.url().includes('url') && res_i.status() === 200) {
             res(await res_i.text());
         }
-    })
-)
+    }
+    page.on('response', getData)
+})
 await page.goto(url);
 let getData = await Promise.race([get, page.waitFor(15000)]);
+page.removeListener('response', getData);
 ```
 
 ### 设置页面中执行方法返回的 Promise 值
