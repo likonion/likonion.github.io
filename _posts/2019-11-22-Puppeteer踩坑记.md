@@ -16,9 +16,9 @@ cover: /assets/media/0*WHo7bG8yHKyt_nzn.png
 
 ```js
 const get = new Promise(res =>{
-    async function getData(res_i) {
-         if (res_i.url().includes('url') && res_i.status() === 200) {
-            res(await res_i.text());
+    async function getData(onRes) {
+         if (onRes.url().includes('url') && onRes.status() === 200) {
+            res(await onRes.text());
         }
     }
     page.on('response', getData)
