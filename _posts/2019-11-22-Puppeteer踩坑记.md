@@ -18,14 +18,32 @@ cover: /assets/media/0*WHo7bG8yHKyt_nzn.png
 const get = new Promise(res =>{
     async function getData(onRes) {
          if (onRes.url().includes('url') && onRes.status() === 200) {
+            page.removeListener('response', getData);
             res(await onRes.text());
         }
     }
     page.on('response', getData)
 })
 await page.goto(url);
-let getData = await Promise.race([get, page.waitFor(15000)]);
-page.removeListener('response', getData);
+const getData = await Promise.race([get, page.waitFor(15000)]);
+```
+### 修改 request 请求数据
+
+
+
+```js
+await page.setRequestInterception(true);
+page.on('request', interceptedRequest => {
+    if (interceptedRequest.url().includes('url')) {
+        let postDataObj = new URLSearchParams(interceptedRequest.postData());
+        postDataObj.set('key', 'value')
+        interceptedRequest.continue({
+            postData: postDataObj.toString(),
+        });
+    } else {
+        interceptedRequest.continue();
+    }
+})
 ```
 
 ### 设置页面中执行方法返回的 Promise 值
