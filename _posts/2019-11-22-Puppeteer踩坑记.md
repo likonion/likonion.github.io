@@ -71,8 +71,12 @@ let newPage = await newPagePromise;
 ### 获取IFRAME
 
 ```js
+// 通过 iFrame 的 ID 或者 class 来获取
 const frameElement = await page.waitForSelector('ID or Class or other');
 const iframe = await frameElement.contentFrame();
+
+// 通过 iframe 的 src 地址来获取
+const frame = await this.page.frames().find(frame => frame.url().includes('src地址'));
 ```
 
 ### `page.click()` 尽量使用页面方法替换
@@ -112,6 +116,19 @@ await page.keyboard.press('Backspace');
 ### page.exposeFunction(name, puppeteerFunction)
 
 此方法会出现页面停滞不动现象，原因不明
+
+### 阻止重定向页面
+
+```js
+await page.setRequestInterception(true);
+page.on('request', request => {
+  if (request.isNavigationRequest() && request.redirectChain().length)
+    request.abort();
+  else
+    request.continue();
+});
+await page.goto('https://example.com');
+```
 
 
 
