@@ -130,5 +130,13 @@ page.on('request', request => {
 await page.goto('https://example.com');
 ```
 
+### page.frames() 无法正常获取到页面 iframe 
+
+Windows系统中出现无法通过 `page.frames()` 获取到全部 iframe 元素
+
+```js
+// 添加这个参数可修复
+args: ['--disable-features=site-per-process']
+```
 
 
