@@ -139,4 +139,21 @@ Windows系统中出现无法通过 `page.frames()` 获取到全部 iframe 元素
 args: ['--disable-features=site-per-process']
 ```
 
+### 关闭浏览器 alert 窗口
+
+```js
+const puppeteer = require('puppeteer');
+
+(async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  page.on('dialog', async dialog => {
+    console.log(dialog.message());
+    await dialog.dismiss();
+    await browser.close();
+  });
+  page.evaluate(() => alert('1'));
+})();
+```
+
 

@@ -934,11 +934,11 @@ a {
         color: #AEB4BD; }
       .night-mode .read-next-item .filter {
         background-color: rgba(0, 0, 0, 0.6); }
-    .night-mode :not(pre) > code[class*="language-"],
-    .night-mode pre[class*="language-"] {
+    .night-mode :not(pre) > code[class*="highlight"],
+    .night-mode pre[class*="highlight"] {
       background-color: #2D313A; }
-    .night-mode code[class*="language-"],
-    .night-mode pre[class*="language-"],
+    .night-mode code[class*="highlight"],
+    .night-mode pre[class*="highlight"],
     .night-mode .token.punctuation,
     .night-mode .token.operator,
     .night-mode .token.entity,
@@ -947,12 +947,12 @@ a {
     .night-mode .style .token.string,
     .night-mode .token.variable {
       color: #8F97A7; }
-    .night-mode pre[class*="language-"]::-webkit-scrollbar-track {
+    .night-mode pre[class*="highlight"]::-webkit-scrollbar-track {
       -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
       border-radius: 10px; }
-    .night-mode pre[class*="language-"]::-webkit-scrollbar {
+    .night-mode pre[class*="highlight"]::-webkit-scrollbar {
       width: 10px; }
-    .night-mode pre[class*="language-"]::-webkit-scrollbar-thumb {
+    .night-mode pre[class*="highlight"]::-webkit-scrollbar-thumb {
       background-color: #494f5a;
       border-radius: 10px; }
     .night-mode .token.atrule,
